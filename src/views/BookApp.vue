@@ -1,7 +1,8 @@
 <template>
   <section class="container">
     <book-filter @filtered="setFilter" />
-    <div>Add a book
+    <div class="add-book-control flex column">
+      <label>Add a book</label>
       <b-form-select
         v-model="addOpton"
         :options="addOptions"

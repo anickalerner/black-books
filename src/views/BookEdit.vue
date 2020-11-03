@@ -33,7 +33,6 @@
         id="cover-group"
         label="Book cover"
         label-for="cover"
-        description="Book's cover"
       >
       <b-form-input
           id="thumbnail"
@@ -42,7 +41,6 @@
           placeholder="Thumbnail" readonly
         ></b-form-input>
       <b-form-file v-model="editBook.coverUploaded" class="mt-3" plain></b-form-file>
-      <div class="mt-3">Selected file: {{ editBook.coverUploaded ? editBook.coverUploaded.name : '' }}</div>
       </b-form-group>
       <b-form-group
         id="authors-group"

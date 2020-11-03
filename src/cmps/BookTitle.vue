@@ -7,3 +7,8 @@ export default {
     props: ['title']
 }
 </script>
+<style lang="scss">
+.card-title{
+    min-height: 2.5em;
+}
+</style>

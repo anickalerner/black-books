@@ -1,5 +1,5 @@
 <template>
-  <div class="card-columns books-columns">
+  <div class="card-grid">
     <book-preview :book="book" v-for="book in books" :key="book.id" @click.native="clicked(book.id)"/>
   </div>
 </template>
@@ -18,8 +18,3 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-.card-columns.books-columns {
-   column-count: 5;
-}
-</style>

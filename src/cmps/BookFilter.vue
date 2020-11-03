@@ -1,7 +1,7 @@
 <template>
     <section class="book-filter">
         <h3>Filter</h3>
-        <input type="text" placeholder="Search a book" v-model="filterBy.txt" @input="emitFilter" />
+        <div><input type="text" placeholder="Search a book" v-model="filterBy.txt" @input="emitFilter" /></div>
         <div class="form-group">
             <label for="priceRange">Price filter</label>
             <input type="range" class="form-control-range" max="200" min="100" id="priceRange" v-model="filterBy.price" @input="emitFilter" />

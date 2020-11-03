@@ -39,3 +39,8 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+.card-text{
+    margin-top: 1em;
+}
+</style>
