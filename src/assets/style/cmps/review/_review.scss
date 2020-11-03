@@ -1,0 +1,19 @@
+section .review-preview{
+    position: relative;
+    margin-bottom: 15px;
+    .close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+}
+.form-group{
+    width: 80%;
+}
+.book-rating{
+    max-width: 170px;
+}
+.review-date{
+    width: 30%;
+}
+ 

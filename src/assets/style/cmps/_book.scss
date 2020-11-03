@@ -1,0 +1,40 @@
+.book-preview img{
+    max-width: 204px;
+}
+.book-preview.row{
+    flex-direction: row;
+}
+.book-details img{
+    max-width: 350px;
+}
+.book-cover-container{
+    position: relative;
+}
+.onsale-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    left: 104px;
+}
+.book-description{
+    word-wrap: break-word;
+}
+
+.read-more-btn{
+    border: none;
+    margin-left: 0.5em;
+    font-size: 0.8em;
+}
+.book-filter input,
+.price-range-labels{
+    width: 50%;
+}
+.price-range-labels{
+    justify-content: space-between;
+}
+.prevnext{
+    button:first-child{
+        margin-right: 20px;
+    }
+}

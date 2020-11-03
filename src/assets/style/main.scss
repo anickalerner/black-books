@@ -1,0 +1,21 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+// Setup:
+@import "setup/variables.scss";
+@import "setup/typography.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+
+// Basics:
+@import "basics/base.scss";
+@import "basics/buttons.scss";
+@import "basics/layout.scss";
+@import "basics/helpers.scss";
+@import "basics/icons.scss";
+@import "basics/animations.scss";
+
+@import './cmps/header';
+@import './cmps/book';
+@import './cmps/home';
+@import './cmps/about';
+@import './cmps/review/review';
