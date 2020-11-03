@@ -46,7 +46,6 @@ export default {
       this.$store.commit({type:'setBooksFilterBy', filterBy})
     },
     optionSelected(){
-      console.log(this.addOpton);
       if (this.addOpton === 'manually') this.$router.push('/book/edit')
       else if (this.addOpton === 'google') this.$router.push('/book/add');
     }

@@ -27,6 +27,10 @@ export default {
                 return books.filter((book) => book.listPrice.amount > minPrice);
             }
             return books;
+        },
+        topBooks(state){
+            const books = state.books;
+            if (books) return books.slice(0,4);
         }
     },
     mutations: {
@@ -48,7 +52,7 @@ export default {
     },
     actions: {
         async loadBooks(context) {
-            const books = await bookService.query()
+            const books = await bookService.query();
             context.commit({ type: 'setBooks', books })
         },
         async removeBook({ commit }, { id }) {

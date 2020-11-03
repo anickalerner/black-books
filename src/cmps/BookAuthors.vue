@@ -1,5 +1,5 @@
 <template>
-     <p class="card-text">{{getAuthors}}</p>
+     <p>{{getAuthors}}</p>
 </template>
 
 <script>

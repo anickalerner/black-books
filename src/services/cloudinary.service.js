@@ -16,7 +16,6 @@ async function upload(thumb) {
             body: formData
         })
         const data = await res.json();
-        console.log(data);
         return data.secure_url;
 
     } catch (err) {

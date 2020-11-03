@@ -1,5 +1,5 @@
 <template>
-    <p class="card-text" :class="getClassName">{{getLocale}}</p>
+    <p :class="getClassName">{{getLocale}}</p>
 </template>
 
 <script>

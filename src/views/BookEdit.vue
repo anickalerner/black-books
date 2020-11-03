@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container shadow-box padding-15">
     <b-form @submit.prevent="addBook" @reset="onReset" v-if="editBook">
       <b-button-close @click="$router.push('/book')" />
       <b-form-group
@@ -95,7 +95,6 @@ export default {
   async created() {
     const { id } = this.$route.params;
     this.editBook = await this.$store.dispatch({type:'getBook', id});
-    console.log(this.editBook);
   },
   methods: {
     onReset(evt) {},

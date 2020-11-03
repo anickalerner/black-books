@@ -1,51 +1,50 @@
-.book-preview img{
-    max-width: 204px;
+.book-card{
+    .card-title{
+        min-height: 2.5em;
+    }
+    .card-text{
+        margin-top: 1em;
+    }
 }
-.book-preview.row{
-    flex-direction: row;
-}
-.book-details img{
-    max-width: 350px;
-}
-.book-cover-container{
+.book-cover-container {
     position: relative;
 }
-.onsale-overlay{
+.onsale-overlay {
     position: absolute;
     right: 0;
     top: 0;
     width: 100px;
 }
-.book-description{
+.book-description {
     word-wrap: break-word;
 }
 
-.read-more-btn{
+.read-more-btn {
     border: none;
     margin-left: 0.5em;
     font-size: 0.8em;
 }
 .book-filter div,
-.add-book-control select{
-    margin-bottom:1em;
+.add-book-control select {
+    margin-bottom: 1em;
 }
 .book-filter input,
 .price-range-labels,
-.add-book-control select{
+.add-book-control select {
     width: 50%;
-    @include for-mobile-layout{
+    @include for-mobile-layout {
         width: 100%;
     }
 }
-input#price{
+input#price {
     width: 5em;
 }
-.price-range-labels{
+.price-range-labels {
     justify-content: space-between;
     margin-left: 0.3em;
 }
-.prevnext{
-    button:first-child{
+.prevnext {
+    button:first-child {
         margin-right: 20px;
     }
 }
