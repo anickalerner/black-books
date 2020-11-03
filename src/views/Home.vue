@@ -47,6 +47,9 @@ export default {
     justify-content:space-evenly;
     .book-card{
       max-width: 22%;
+      .footer{
+        display: none;
+      }
     }
   }
 }

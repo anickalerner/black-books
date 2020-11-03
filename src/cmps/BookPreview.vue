@@ -14,7 +14,7 @@
         <book-authors :authors="book.authors" />
         <book-price :price="book.listPrice" />
       </div>
-      <div class="flex space-between">
+      <div class="footer flex space-between">
         <b-button @click="$router.push(`/book/${book.id}`)">Details</b-button>
         <div>
           <b-button
