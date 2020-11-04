@@ -51,9 +51,11 @@ export default {
         }
     },
     actions: {
-        async loadBooks(context) {
-            const books = await bookService.query();
-            context.commit({ type: 'setBooks', books })
+        loadBooks(context) {
+            setTimeout(async () => { 
+                const books = await bookService.query();
+                context.commit({ type: 'setBooks', books })
+            }, 1000);
         },
         async removeBook({ commit }, { id }) {
             await bookService.remove(id)

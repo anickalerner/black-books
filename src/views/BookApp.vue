@@ -9,9 +9,12 @@
         @input="optionSelected"
       ></b-form-select>
     </div>
-
-    <!-- <router-link to="/book/edit">Add a book</router-link> -->
-    <book-list :books="booksToShow" />
+    <book-list :books="booksToShow" v-if="booksToShow" />
+    <div v-else>
+      <div class="spinner-border m-2" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -27,28 +30,27 @@ export default {
         txt: "",
         price: 0,
       },
-      addOpton: '',
-      addOptions:[
-        {value: 'manually', text: 'Manually'},
-        {value: 'google', text: 'From Google books'}
-      ]
-
+      addOpton: "",
+      addOptions: [
+        { value: "manually", text: "Manually" },
+        { value: "google", text: "From Google books" },
+      ],
     };
   },
   async created() {
     this.loadBooks();
   },
   methods: {
-    async loadBooks(){
-      this.$store.dispatch({ type: 'loadBooks' });
+    async loadBooks() {
+      this.$store.dispatch({ type: "loadBooks" });
     },
     setFilter(filterBy) {
-      this.$store.commit({type:'setBooksFilterBy', filterBy})
+      this.$store.commit({ type: "setBooksFilterBy", filterBy });
     },
-    optionSelected(){
-      if (this.addOpton === 'manually') this.$router.push('/book/edit')
-      else if (this.addOpton === 'google') this.$router.push('/book/add');
-    }
+    optionSelected() {
+      if (this.addOpton === "manually") this.$router.push("/book/edit");
+      else if (this.addOpton === "google") this.$router.push("/book/add");
+    },
   },
   computed: {
     booksToShow() {
